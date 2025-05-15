@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="StudentFormData" class="was-validated">
+                    <div class="md-6">
+                        <div class="col-md-6">
+                            <label for="student_uid" class="form-label">Student UID</label>
+                            <input type="text" class="form-control" id="student_uid" placeholder="Enter Student UID"
+                                name="uid" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="student_first_name" class="form-label">Student First Name</label>
+                            <input type="text" class="form-control" id="student_first_name"
+                                placeholder="Enter Student First Name" name="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Student_last_name" class="form-label">Student Last Name</label>
+                            <input type="text" class="form-control" id="Student_last_name"
+                                placeholder="Enter Student Last Name" name="lname" required>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="emailInput" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                name="pswd" required>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Gender :
+                                <input type="radio" class="form-check-input" id="validationFormCheck2"
+                                    name="radio-stacked" required>
+                                <label class="form-check-label" for="validationFormCheck2">Male</label>
+
+                                <input type="radio" class="form-check-input" id="validationFormCheck3"
+                                    name="radio-stacked" required>
+                                <label class="form-check-label" for="validationFormCheck3">Female</label>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <select class="form-select" id="day" name="day">
+                                    <option selected>DD</option>
+
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select" id="month" name="month">
+                                    <option selected>MM</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select" id="year" name="year">
+                                    <option selected>YYYY</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            Mobile Number
+                            <label for="contactNumber" class="form-check-label"></label>
+                            <input type="number" class="form-control" id="contactNumber">
+                        </div>
+                        <div class="col-md-6">
+                            <label  class="form-label">Hobbies : </label>
+                            <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                            <label class="form-check-label" for="validationFormCheck1">Codding</label>
+
+                            <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                            <label class="form-check-label" for="validationFormCheck1">Traveling</label>
+
+
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">S.NO</th>
+                            <th scope="col">UID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">D.O.B</th>
+                            <th scope="col">Contact No.</th>
+                            <th scope="col">Hobbies</th>
+                        </tr>
+                    </thead>
+                    <tbody id="TableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="StudentForm.js">
+
+    </script>
+</body>
+
+</html>
